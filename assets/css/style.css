@@ -1,3 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
 :root{
     --bg-primary:#009688;
     --bg-secondary:#DBDBD2;
@@ -17,5 +27,15 @@
 #site_main{
     height: 100vh;
     background-color: var(--bg-secondary);
+}
+.contact{
+    background-color: var(--bg-tertiary);
+}
+.img_avatar img{
+    width: 10%;
+}
+.img_avatar .name_avatar,
+.action i {
+    font-size: small;
 }
 /* /Main */
