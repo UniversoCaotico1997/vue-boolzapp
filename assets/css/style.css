@@ -21,21 +21,55 @@ img{
     background-color: var(--bg-primary);
 }
 
-/* /Header */
+/* /.Header */
 
 /* Main */
 #site_main{
     height: 100vh;
     background-color: var(--bg-secondary);
 }
-.contact{
+
+/* contact */
+.row>* {
+    padding-right: 0;
+}
+.col-4>.contact{
     background-color: var(--bg-tertiary);
 }
 .img_avatar img{
     width: 10%;
-}
-.img_avatar .name_avatar,
+} 
+
 .action i {
     font-size: small;
 }
-/* /Main */
+/* /.contact */
+
+/* notice */
+.notice{
+    background-color: var(--bg-notice);
+    padding: 0.50rem ;
+}
+.new_notice{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;  
+}
+
+.action_notice p{
+    font-size: xx-small;
+}
+/* /.notice */
+
+/* search */
+
+/* /.search */
+
+/* list_contacts */
+.contact{
+    background-color: white;
+}
+/* /.list_contacts */
+/* /.Main */
