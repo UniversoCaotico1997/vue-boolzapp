@@ -17,7 +17,7 @@ img{
 
 /* Header */
 #site_header{
-    height: 144px;
+    height: 100px;
     background-color: var(--bg-primary);
 }
 
@@ -30,11 +30,16 @@ img{
 }
 
 /* contact */
+
+
 .row>* {
     padding-right: 0;
+    padding-left: 0;
 }
-.col-4>.contact{
+.col-4>.contact,
+.col-6>.contact_selected{
     background-color: var(--bg-tertiary);
+    height: 50px;
 }
 .img_avatar img{
     width: 10%;
@@ -68,8 +73,20 @@ img{
 /* /.search */
 
 /* list_contacts */
-.contact{
+.col-4{
     background-color: white;
 }
+.list_contacts .contact{
+    height: 40px;
+}
 /* /.list_contacts */
+
+/* contact_selected */
+
+
+.name_avatar p{
+    font-size: xx-small;
+}
+/* /.contact_selected */
 /* /.Main */
+
