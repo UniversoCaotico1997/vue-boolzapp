@@ -17,7 +17,7 @@ img{
     --bg-tertiary:#EAEAEA;
     --bg-notice:#8EDAFC;
     --bg-sent-message:#D5F9BA;
-    --bg-recived-message:#FFFFFF;
+    --bg-received-message:#FFFFFF;
 }
 
 
@@ -99,17 +99,22 @@ img{
 /* /.contact_selected */
 
 /* messege */
+.message{
+    display: flex;
+    flex-direction: column;
+    
+}
 .sent{
-    padding: 0.50rem;
-    background-color: var(--bg-sent-message);
-    border-radius: 25px;
+    background-color: var(--bg-sent-message); 
+    padding: 0.25rem;
+    width: 200px; 
+    align-self: flex-end;
 }
 .received{
-    width: 200px;
-    padding: 0.50rem;
-    background-color: var(--bg-recived-message);
-    border-radius: 25px;
-}
+    background-color: var(--bg-received-message);
+    padding: 0.25rem;
+    width: 200px; 
+} 
 /* /.messege */
 
 /* write message */
