@@ -109,11 +109,13 @@ img{
     padding: 0.25rem;
     width: 200px; 
     align-self: flex-end;
+    margin: 1rem 3rem;
 }
 .received{
     background-color: var(--bg-received-message);
     padding: 0.25rem;
     width: 200px; 
+    margin: 0 3rem;
 } 
 /* /.messege */
 

@@ -96,10 +96,9 @@
                     </div>
 
                     <!-- message -->
-                    <div class="message">
-                        <p class="sent mx-5 my-4">Hai portato il cane?</p>
-                        <p class="sent mx-5 my-4">Ricordati di stendere i panni</p>
-                        <p class="received mx-5">Tutto fatto!</p>
+                    <div class="message" v-for="message in contacts[active].messages">
+                        <p class="sent">{{message.message}}</p>
+                        <p class="received"></p>
                     </div>
                     <!-- /.message -->
                     
