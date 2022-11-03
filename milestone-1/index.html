@@ -12,10 +12,7 @@
 <body>
     <div id="app">
     
-       
-
-
-       
+   
         <div class="container">
             <div class="row">
                 <div class="col-4">
@@ -55,7 +52,7 @@
                     </div>
                     <!-- /.search -->
                     <div class="list_contacts">
-                        <div class="contact d-flex justify-content-between my-2" v-for="contact in contacts">
+                        <div class="contact d-flex justify-content-between my-2" v-for="(contact, i) in contacts" @click="setActiveChat(i)" :class=" i == active ? 'select_chat' : ''">
                             <div class="info_avatar d-flex px-1">
                                 <img class="rounded-circle" :src="`./assets/img/avatar${contact.avatar}.jpg`" alt="">
                                 <div class="name_avatar">
@@ -187,6 +184,14 @@
                             <i class="fa-solid fa-ellipsis-vertical"></i>
                         </div>
                     </div>
+
+                    <!-- message -->
+                    <div class="message">
+                        <p class="received">Hai portato il cane?</p>
+                        <p class="received">Ricordati di stendere i panni</p>
+                        <p class="sent">Tutto fatto!</p>
+                    </div>
+                    <!-- /.message -->
                     
                 </div>
                 <!-- /.col -->

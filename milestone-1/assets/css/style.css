@@ -71,6 +71,9 @@ img{
 .list_contacts .contact{
     height: 40px;
 }
+.select_chat{
+    background-color: var(--bg-secondary);
+}
 /* /.list_contacts */
 
 /* contact_selected */
@@ -80,5 +83,12 @@ img{
     font-size: xx-small;
 }
 /* /.contact_selected */
+
+/* messege */
+.received{
+   
+}
+    
+/* /.messege */
 
 
