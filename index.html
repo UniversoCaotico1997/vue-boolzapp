@@ -57,20 +57,25 @@
                     </section>
                     <!-- /.search -->
                     <section class="list_contacts">
-                        <div class="contact d-flex my-2">
+                        <div class="contact d-flex justify-content-between my-2" v-for="contact in contacts">
                             <div class="info_avatar d-flex px-1">
-                                <img class="rounded-circle" src="./assets/img/avatar_1.jpg" alt="ragazza">
+                                <img class="rounded-circle" :src="`./assets/img/avatar${contact.avatar}.jpg`" alt="">
                                 <div class="name_avatar">
                                         <small>
-                                            Michele
+                                           {{contact.name}}
                                         </small>
                                         <p>
                                             Ultimo messaggio inviato
                                         </p>
                                  </div>
                             </div>
+                            <div class="time">
+                                <p>
+                                    12:00
+                                </p>
+                            </div>
                         </div>
-                        <div class="contact d-flex my-2">
+                        <!-- <div class="contact d-flex my-2">
                             <div class="info_avatar d-flex px-1">
                                 <img class="rounded-circle" src="./assets/img/avatar_2.jpg" alt="ragazza">
                                 <div class="name_avatar">
@@ -160,7 +165,7 @@
                                         </p>
                                  </div>
                             </div>
-                        </div>
+                        </div> -->
                     </section>
                     <!-- /.list_contacts -->
                 </div>
