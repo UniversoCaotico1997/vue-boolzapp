@@ -12,16 +12,14 @@
 <body>
     <div id="app">
     
-       <header id="site_header">
-       </header>
+       
 
 
-
-       <main id="site_main">
+       
         <div class="container">
             <div class="row">
                 <div class="col-4">
-                    <section class="contact d-flex">
+                    <div class="contact d-flex">
                         <div class="info_avatar d-flex px-1 py-2">
                             <div class="img_avatar">
                                 <img class="rounded-circle" src="./assets/img/avatar_io.jpg" alt="ragazza">
@@ -35,17 +33,17 @@
                             <i class="fa-solid fa-message px-2"></i>
                             <i class="fa-solid fa-ellipsis-vertical"></i>
                         </div>
-                    </section>
+                    </div>
                     <!-- /.contact -->
-                    <section class="notice">
+                    <div class="notice">
                        <div class="new_notice">
                            <div class="action_notice">
                                 <i class="fa-solid fa-bell-slash"></i>
                             </div>
                        </div>
-                    </section>
+                    </div>
                     <!-- /.notice -->
-                    <section class="search">
+                    <div class="search">
                         <nav class="navbar bg-light">
                             <form class="container-fluid">
                               <div class="input-group">
@@ -54,9 +52,9 @@
                               </div>
                             </form>
                           </nav>
-                    </section>
+                    </div>
                     <!-- /.search -->
-                    <section class="list_contacts">
+                    <div class="list_contacts">
                         <div class="contact d-flex justify-content-between my-2" v-for="contact in contacts">
                             <div class="info_avatar d-flex px-1">
                                 <img class="rounded-circle" :src="`./assets/img/avatar${contact.avatar}.jpg`" alt="">
@@ -166,12 +164,12 @@
                                  </div>
                             </div>
                         </div> -->
-                    </section>
+                    </div>
                     <!-- /.list_contacts -->
                 </div>
                 <!-- /.col -->
                 <div class="col-6">
-                    <section class="contact_selected d-flex justify-content-between">
+                    <div class="contact_selected d-flex justify-content-between">
                         <div class="info_avatar d-flex px-1 py-1">
                                 <img class="rounded-circle" src="./assets/img/avatar_1.jpg" alt="ragazza">
                                 <div class="name_avatar">
@@ -188,7 +186,7 @@
                             <i class="fa-solid fa-message px-2"></i>
                             <i class="fa-solid fa-ellipsis-vertical"></i>
                         </div>
-                    </section>
+                    </div>
                     
                 </div>
                 <!-- /.col -->
@@ -197,7 +195,7 @@
         </div>
         <!-- /.container -->
 
-       </main>
+   
 
 
 

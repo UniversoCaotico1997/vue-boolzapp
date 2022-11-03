@@ -1,3 +1,6 @@
+body{
+    background-image: linear-gradient(to bottom, var( --bg-primary)0, var(--bg-primary)144px, var(--bg-secondary)144px, var(--bg-secondary)100%);
+}
 *{
     margin: 0;
     padding: 0;
@@ -15,21 +18,10 @@ img{
     --bg-notice:#8EDAFC;
 }
 
-/* Header */
-#site_header{
-    height: 100px;
-    background-color: var(--bg-primary);
+
+.container{
+    margin-top: 4rem;
 }
-
-/* /.Header */
-
-/* Main */
-#site_main{
-    height: 100vh;
-    background-color: var(--bg-secondary);
-}
-
-/* contact */
 
 
 .row>* {
@@ -83,11 +75,10 @@ img{
 
 /* contact_selected */
 
-
 .name_avatar p,
 .time{
     font-size: xx-small;
 }
 /* /.contact_selected */
-/* /.Main */
+
 
