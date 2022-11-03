@@ -1,6 +1,6 @@
-body{
-    background-image: linear-gradient(to bottom, var( --bg-primary)0, var(--bg-primary)144px, var(--bg-secondary)144px, var(--bg-secondary)100%);
-}
+body
+    
+
 *{
     margin: 0;
     padding: 0;
@@ -16,6 +16,8 @@ img{
     --bg-secondary:#DBDBD2;
     --bg-tertiary:#EAEAEA;
     --bg-notice:#8EDAFC;
+    --bg-sent-message:#D5F9BA;
+    --bg-recived-message:#FFFFFF;
 }
 
 
@@ -28,11 +30,15 @@ img{
     padding-right: 0;
     padding-left: 0;
 }
+
 .col-4>.contact,
-.col-6>.contact_selected{
+.col-6>.contact_selected,
+.write_message{
     background-color: var(--bg-tertiary);
     height: 50px;
+    width: 100%;
 }
+
 .img_avatar img{
     width: 10%;
 } 
@@ -48,11 +54,13 @@ img{
     padding: 0.50rem ;
 }
 .new_notice{
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background-color: white;
-    text-align: center;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .action_notice p{
@@ -77,18 +85,37 @@ img{
 /* /.list_contacts */
 
 /* contact_selected */
+.col-6{
+    background-image: url(../img/mine.jpg);
+    position: relative;
+}
 
 .name_avatar p,
-.time{
+.time,
+.sent,
+.received{
     font-size: xx-small;
 }
 /* /.contact_selected */
 
 /* messege */
-.received{
-   
+.sent{
+    padding: 0.50rem;
+    background-color: var(--bg-sent-message);
+    border-radius: 25px;
 }
-    
+.received{
+    width: 200px;
+    padding: 0.50rem;
+    background-color: var(--bg-recived-message);
+    border-radius: 25px;
+}
 /* /.messege */
+
+/* write message */
+
+/* /.write message */
+
+
 
 

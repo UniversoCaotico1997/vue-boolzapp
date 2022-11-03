@@ -172,6 +172,7 @@ createApp({
   methods:{
     setActiveChat(i){
         this.activeIndex = i;
+        console.log(this.activeIndex = i);
     }
   }
 }).mount('#app')
