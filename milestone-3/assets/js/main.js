@@ -184,6 +184,15 @@ createApp({
         }
         this.contacts[this.active].messages.push(message);
         this.newMessage = '';
+        setTimeout(this.receivedMessage, 1000);
+    },
+    receivedMessage(){
+        const message ={
+            date:'10/01/2020 15:51:00',
+            message: `ok`,
+            status: `received`,
+        }
+        this.contacts[this.active].messages.push(message);
     }
   }
 }).mount('#app')
