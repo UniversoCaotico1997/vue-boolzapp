@@ -89,7 +89,7 @@ img{
     height: 40px;
 }
 .select_chat{
-    background-color: var(--bg-secondary);
+    background-color: var(--bg-tertiary);
 }
 /* /.list_contacts */
 
