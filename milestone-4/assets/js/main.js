@@ -198,7 +198,15 @@ createApp({
         this.contacts.forEach(contact => {
             contact.visible = false;
             const nameContact = contact.name.toLowerCase();
-            const input = this.contactName.toLowerCase();        
+            const input = this.contactName.toLowerCase();
+            let wordContact ='';
+                for (let i = 0; i < nameContact.length; i++) {
+                    wordContact += nameContact.charAt(i);
+                    
+                    if (wordContact === input){
+                        contact.visible = true
+                        } 
+                }        
         });
     }
   }
