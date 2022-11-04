@@ -179,10 +179,11 @@ createApp({
         // console.log(`Ho premuto enter`);
         // console.log(this.newMessage);
         const message ={
-            ...this.newMessage
+            message: this.newMessage,
+            status: `sent`,
         }
         this.contacts[this.active].messages.push(message);
-        this.newMessage.message='';
+        this.newMessage = '';
     }
   }
 }).mount('#app')
