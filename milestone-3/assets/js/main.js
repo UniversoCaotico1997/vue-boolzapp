@@ -3,6 +3,7 @@ const { createApp } = Vue
 createApp({
   data() {
     return {
+        newMessage: ``,
         active:0,
         contacts: [
             {
@@ -172,7 +173,13 @@ createApp({
   methods:{
     setActiveChat(i){
         this.active = i;
-        console.log(this.active = i);
+        // console.log(this.active = i);
+    },
+    addNewMessage(){
+        // console.log(`Ho premuto enter`);
+        // console.log(this.newMessage);
+
+        this.contacts[this.active].messages.push(this.newMessage);
     }
   }
 }).mount('#app')

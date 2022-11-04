@@ -106,7 +106,7 @@
                         <div class="emoji mx-3">
                             <i class="fa-regular fa-face-smile"></i>
                         </div>
-                        <input  class="flex-grow-1" type="text" placeholder="Scrivi un messaggio">
+                        <input  class="flex-grow-1" type="text" placeholder="Scrivi un messaggio" v-model="newMessage" @keyup.enter="addNewMessage">
                         <div class="microphone mx-3">
                             <i class="fa-solid fa-microphone"></i>
                         </div>
