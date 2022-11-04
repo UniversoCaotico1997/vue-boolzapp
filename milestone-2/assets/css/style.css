@@ -1,4 +1,7 @@
-body
+body{
+    background-color: var(--bg-secondary);
+}
+    
     
 
 *{
@@ -69,6 +72,9 @@ img{
 /* /.notice */
 
 /* search */
+.input-group-text {
+    background-color:var(--bg-received-message);
+}
 
 /* /.search */
 
@@ -85,6 +91,7 @@ img{
 /* /.list_contacts */
 
 /* contact_selected */
+
 .col-6{
     background-image: url(../img/mine.jpg);
     position: relative;
@@ -102,20 +109,20 @@ img{
 .message{
     display: flex;
     flex-direction: column;
+    padding: 0.50rem;
+    width: 200px; 
+    
     
 }
 .sent{
     background-color: var(--bg-sent-message); 
-    padding: 0.25rem;
-    width: 200px; 
-    align-self: flex-end;
     margin: 1rem 3rem;
+    align-self:flex-end;
+    
 }
 .received{
     background-color: var(--bg-received-message);
-    padding: 0.25rem;
-    width: 200px; 
-    margin: 0 3rem;
+    margin: 1rem 3rem; 
 } 
 /* /.messege */
 
