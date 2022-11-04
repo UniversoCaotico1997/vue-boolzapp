@@ -178,8 +178,11 @@ createApp({
     addNewMessage(){
         // console.log(`Ho premuto enter`);
         // console.log(this.newMessage);
-
-        this.contacts[this.active].messages.push(this.newMessage);
+        const message ={
+            ...this.newMessage
+        }
+        this.contacts[this.active].messages.push(message);
+        this.newMessage.message='';
     }
   }
 }).mount('#app')
