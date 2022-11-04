@@ -45,7 +45,7 @@
                             <form class="container-fluid">
                               <div class="input-group">
                                 <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
-                                <input type="text" class="form-control" placeholder="Cerca o inizia una nuova chat" aria-label="Username" aria-describedby="basic-addon1">
+                                <input type="text" class="form-control" placeholder="Cerca o inizia una nuova chat" aria-label="Username" aria-describedby="basic-addon1" v-model="contactName" @input="searchContact">
                               </div>
                             </form>
                           </nav>
@@ -84,7 +84,7 @@
                                         {{contacts[active].name}}
                                     </small>  
                                     <p>
-                                        Ultimo messaggio inviato
+                                        Ultimo accesso  oggi alle 12:00
                                     </p>
                                 </div>
                         </div>

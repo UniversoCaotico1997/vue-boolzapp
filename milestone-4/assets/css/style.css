@@ -120,7 +120,7 @@ img{
 .sent{
     background-color: var(--bg-sent-message); 
     margin: 1rem 3rem;
-    align-self:flex-end;
+    align-self: flex-end;
     
 }
 .received{

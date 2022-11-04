@@ -193,6 +193,13 @@ createApp({
             status: `received`,
         }
         this.contacts[this.active].messages.push(message);
+    },
+    searchContact(){
+        this.contacts.forEach(contact => {
+            contact.visible = false;
+
+           
+        });
     }
   }
 }).mount('#app')
