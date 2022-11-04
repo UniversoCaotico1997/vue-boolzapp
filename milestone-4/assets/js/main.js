@@ -197,8 +197,8 @@ createApp({
     searchContact(){
         this.contacts.forEach(contact => {
             contact.visible = false;
-
-           
+            const nameContact = contact.name.toLowerCase();
+            const input = this.contactName.toLowerCase();        
         });
     }
   }
